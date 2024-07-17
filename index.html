@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photographer Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+        <div id="headerCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#headerCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#headerCarousel" data-slide-to="1"></li>
+                <li data-target="#headerCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="overlay"></div>
+                    <img src="img/slider1.jpg" class="d-block w-100" alt="Slide 1">
+                    <div class="carousel-caption d-flex h-100 align-items-center justify-content-center">
+                        <div class="text-center text-white">
+                            <h1 class="display-4">Welcome to My Photography Portfolio</h1>
+                            <p class="lead">Capturing moments from today, creating memories for a lifetime.</p>
+                            <a href="#portfolio" class="btn btn-primary mt-3">View My Work</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="overlay"></div>
+                    <img src="img/slider2.jpg" class="d-block w-100" alt="Slide 2">
+                    <div class="carousel-caption d-flex h-100 align-items-center justify-content-center">
+                        <div class="text-center text-white">
+                            <h1 class="display-4">Professional Photography</h1>
+                            <p class="lead">Specializing in portrait, landscape, and event photography.</p>
+                            <a href="#services" class="btn btn-primary mt-3">Explore Services</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="overlay"></div>
+                    <img src="img/slider3.jpg" class="d-block w-100" alt="Slide 3">
+                    <div class="carousel-caption d-flex h-100 align-items-center justify-content-center">
+                        <div class="text-center text-white">
+                            <h1 class="display-4">Create Lasting Memories</h1>
+                            <p class="lead">Let us capture your special moments with creativity and passion.</p>
+                            <a href="#contact" class="btn btn-primary mt-3">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#headerCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#headerCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="assets/images/about.jpeg" class="img-fluid rounded" alt="About Me">
+                    <!--Photo by Alain Garcia: https://www.pexels.com/photo/nature-bird-animal-photography-19890516/-->
+                </div>
+                <div class="col-lg-6">
+                    <h2>About Me</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
+                        vestibulum. Cras venenatis euismod malesuada. Nulla facilisi.</p>
+                    <p>Maecenas sit amet tincidunt elit. Proin fermentum massa non arcu faucibus, ac varius massa
+                        scelerisque. Integer eu urna ut eros tincidunt ullamcorper.</p>
+                    <a href="#contact" class="btn btn-dark mt-3">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">My Work</h2>
+            <p class="text-center mb-4">A selection of some recent projects and photographs.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="assets/images/portfolio1.jpeg" class="card-img-top" alt="Portfolio 1">
+                        <!--Photo by Pixabay: https://www.pexels.com/photo/brown-squirrel-47547/-->
+                        <div class="card-body">
+                            <h5 class="card-title">Project Title 1</h5>
+                            <p class="card-text">A brief description of the project or photo. Highlight the key aspects
+                                and unique features.</p>
+                            <p class="card-date"><small class="text-muted">Date: January 2024</small></p>
+                            <a href="#" class="btn btn-primary">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="assets/images/portfolio2.jpeg" class="card-img-top" alt="Portfolio 2">
+                        <!--Photo by GEORGE DESIPRIS: https://www.pexels.com/photo/close-up-photography-of-tiger-792381/-->
+                        <div class="card-body">
+                            <h5 class="card-title">Project Title 2</h5>
+                            <p class="card-text">A brief description of the project or photo. Highlight the key aspects
+                                and unique features.</p>
+                            <p class="card-date"><small class="text-muted">Date: February 2024</small></p>
+                            <a href="#" class="btn btn-primary">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="assets/images/portfolio3.jpeg" class="card-img-top" alt="Portfolio 3">
+                        <!--Photo by Sivakumar B: https://www.pexels.com/photo/green-and-red-beak-bird-on-grey-branch-97533/-->
+                        <div class="card-body">
+                            <h5 class="card-title">Project Title 3</h5>
+                            <p class="card-text">A brief description of the project or photo. Highlight the key aspects
+                                and unique features.</p>
+                            <p class="card-date"><small class="text-muted">Date: March 2024</small></p>
+                            <a href="#" class="btn btn-primary">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center">My Services</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="icon my-3">
+                        <i class="fas fa-camera fa-3x"></i>
+                    </div>
+                    <h4>Photography</h4>
+                    <p>Professional photography services for any occasion.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon my-3">
+                        <i class="fas fa-video fa-3x"></i>
+                    </div>
+                    <h4>Videography</h4>
+                    <p>High-quality videography to capture your special moments.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon my-3">
+                        <i class="fas fa-palette fa-3x"></i>
+                    </div>
+                    <h4>Editing</h4>
+                    <p>Professional editing services to enhance your photos and videos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">What Clients Say</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <blockquote>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."
+                            </p>
+                        </blockquote>
+                        <cite>&mdash; Client Name</cite>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <blockquote>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."
+                            </p>
+                        </blockquote>
+                        <cite>&mdash; Client Name</cite>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <blockquote>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."
+                            </p>
+                        </blockquote>
+                        <cite>&mdash; Client Name</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Get in Touch</h2>
+            <p class="text-center mb-5">I'm available for freelance projects and collaborations. Feel free to reach out to me using the form below, or connect with me on social media.</p>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputName">Name</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="Your Name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail">Email</label>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Your Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputMessage">Message</label>
+                            <textarea class="form-control" id="inputMessage" rows="4" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="m-0">© 2024 Photographer Portfolio. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-labelledby="portfolioModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModalLabel">Project Title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/portfolio1.jpeg" class="img-fluid mb-3" alt="Portfolio Image">
+                    <p>Detailed description of the project or photo. Explain the key features, techniques used, and any
+                        other relevant information.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
